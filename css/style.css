@@ -1,0 +1,24 @@
+.nav a {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 100px;
+    color: white;
+    text-decoration: none;
+}
+
+.nav a::first-letter{
+    color: black;
+}
+
+.nav a:hover{
+    color: rgba(1,78,25,255);
+}
+
+#navbar-position{
+    margin-top: 120px;
+    padding-left: 100%;
+}
+
+.TorenImage{
+    height: 500px;
+    width: auto;
+}
