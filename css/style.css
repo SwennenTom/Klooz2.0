@@ -7,6 +7,7 @@
     width: auto;
 }
 
+
                                         /* ++++NAVIGATION++++ */
 
 /* Font size and color*/
@@ -45,12 +46,13 @@
 /*Footer position*/
 
 footer{
+    position:fixed;
     bottom:0;
 }
 
 @media (max-height: 850px) {
     footer{
-        position: fixed;
+        position: static;
         top: 770px;
     }
 }
