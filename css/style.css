@@ -31,9 +31,8 @@
 /* Position */
 #navbar-position{
     margin-top: 120px;
-    padding-bottom: 300px;
+    /* margin-bottom: 50%; */
 }
-
 
 /* Smaller font size for small devices */
 @media (max-width: 650px) {
@@ -44,13 +43,23 @@
 
                                         /*++++FOOTER++++*/
 
+/*Footer position*/
+
+@media (max-height: 850px) {
+    #footer{
+        position: fixed;
+        margin-top: 850px;
+    }
+}
+
 /* Footer logo's */
 .footerlogo {
     height: 50px;
-    margin: 5px;
+    margin: 15px;
     filter: grayscale();
 }
 
+/*Footer logo's get color back on hover*/
 .footerlogo:hover {
     filter: none;
 }
