@@ -46,7 +46,7 @@
 
 /* ++++ CONTENT ++++*/
 
-/* Titles font and sizing */
+/* EXPERIMENTEN Titles font and sizing */
 
 h2{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -68,9 +68,20 @@ h2{
     margin: 15px;
 }
 
+/* Galleries */
+
 .content{
     margin-top: 25%;
 }
+
+.carousel{
+margin-bottom: 25%;
+}
+
+.carousel button{
+    z-index: 100;
+}
+
 /* Responsiveness of agenda */
 
 .responsiveAgenda{
