@@ -7,13 +7,19 @@
     width: auto;
 }
 
+/* Keeps z-index of Klooz logo negative*/
+.kloozLogo{
+    z-index: -100;
+}
+
+
 
                                         /* ++++NAVIGATION++++ */
 
 /* Font size and color*/
 .nav a {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 100px;
+    font-size: 5rem;
     color: black;
     text-decoration: none;
 }
@@ -37,7 +43,8 @@
 /* Smaller font size for small devices */
 @media (max-width: 650px) {
     .nav-link {
-      font-size: 75px !important; 
+      /* font-size: 75px !important;  */
+      font-size: 3.5rem !important; 
     }
 }
 
@@ -66,7 +73,7 @@ footer{
 
 /* Footer logo's */
 .footerlogo {
-    height: 50px;
+    height: 4vh;
     margin: 15px;
     filter: grayscale();
 }
@@ -74,4 +81,9 @@ footer{
 /*Footer logo's get color back on hover*/
 .footerlogo:hover {
     filter: none;
+}
+
+/* Copy right sizing */
+#copyright{
+    font-size: 0.75rem;
 }
