@@ -94,6 +94,8 @@ margin-left: 10%;
     height: 0;
     overflow:hidden;
     margin-bottom: 100px;
+    filter:grayscale();
+    
 }
 
 .responsiveAgenda iframe{
@@ -102,6 +104,10 @@ margin-left: 10%;
     left:0;
     width: 100%;
     height: 100%;
+}
+
+#activiteit{
+    list-style: none;
 }
 
                                         /*++++FOOTER++++*/
