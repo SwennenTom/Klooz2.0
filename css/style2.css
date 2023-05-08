@@ -1,19 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Hind:wght@700&display=swap');                                    /* ++++GENERAL++++*/
 
-/* Keeps image at bottom right*/
-.TorenImage{
-    height: 500px;
-    width: auto;
-}
+/* ++++GENERAL++++*/
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@700&display=swap');
 
-@media (max-height: 850px) {
-    .TorenImage{
-        height: 250px;
-        width: auto;
-    }
-}
 
-                                        /* ++++NAVIGATION++++ */
+/* ++++NAVIGATION++++ */
 
 /* Font size and color*/
 .nav a {
@@ -56,7 +46,17 @@
 
 /* ++++ CONTENT ++++*/
 
-/* EXPERIMENTEN Titles font and sizing */
+/* OVER */
+
+/* Accordion title sizing */
+
+.accordion-header button{
+    font-size: 2rem!important;
+}
+
+/* EXPERIMENTEN */ 
+
+/*Titles font and sizing */
 
 h2{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -93,6 +93,8 @@ margin-left: 10%;
     z-index: 100;
 }
 
+/* AGENDA */
+
 /* Responsiveness of agenda */
 
 .responsiveAgenda{
@@ -117,7 +119,20 @@ margin-left: 10%;
     list-style: none;
 }
 
-                                        /*++++FOOTER++++*/
+/*++++FOOTER++++*/
+
+/* Keeps image at bottom right*/
+.TorenImage{
+    height: 500px;
+    width: auto;
+}
+
+@media (max-height: 850px) {
+    .TorenImage{
+        height: 250px;
+        width: auto;
+    }
+}
 
 /*Footer position*/
 
