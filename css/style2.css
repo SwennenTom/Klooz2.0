@@ -6,7 +6,7 @@
 /* ++++NAVIGATION++++ */
 
 /* Font size and color*/
-.nav a {
+.nav a{
     font-family: Impact, 'Hind', 'Arial Narrow Bold', sans-serif;
     font-size: 5rem;
     color: black;
@@ -14,13 +14,18 @@
 }
 
 .active{
-    color:rgb(155,186,97) !important;
+    color:rgb(155,186,97);
 }
 
 /* Link turns green on hover*/
-.nav a:hover{
-    color: rgba(1,78,25,255);
+.nav a:hover, .accordion-button:hover{
+    /* color: rgba(1,78,25,255); */
     color: rgb(155,186,97);
+}
+
+/*Keeps first letter black*/
+.first-letter-black{
+    color: black;
 }
 
 /* Position */
