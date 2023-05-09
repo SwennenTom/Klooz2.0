@@ -1,11 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind:wght@700&display=swap');
 
+@font-face {
+    font-family: 'ImpactFont';
+    src: url('/fonts/impact.ttf') format('truetype');
+  }
+
                                    /* ++++GENERAL++++*/
 
 /* Keeps image at bottom right*/
 .TorenImage{
     height: 500px;
     width: auto;
+}
+
+@media (max-height: 850px) {
+    .TorenImage{
+        height: 250px;
+        width: auto;
+    }
 }
 
 /* Keeps z-index of Klooz logo negative*/
@@ -17,7 +29,7 @@
 
 /* Font size and color*/
 .nav a {
-    font-family: Impact, 'Hind', 'Arial Narrow Bold', sans-serif;
+    font-family: 'ImpactFont', Impact, 'Hind', 'Arial Narrow Bold', sans-serif;
     font-size: 5rem;
     color: black;
     text-decoration: none;
@@ -57,6 +69,9 @@
                                         /*++++FOOTER++++*/
 
 /*Footer position*/
+#content{
+    padding-bottom: 140px;
+}
 
 footer{
     position:fixed;
@@ -88,3 +103,8 @@ footer{
 #copyright{
     font-size: 0.75rem;
 }
+
+html, body {
+    height: 100%;
+    margin: 0;
+  }

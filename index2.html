@@ -24,9 +24,9 @@
 <body>
 
     <div class="container-fluid">
-        <div class="row">
+        <div class="row" id="content">
 
-<!-- Klooz Logo -->
+            <!-- Klooz Logo -->
 
             <div class="col-12 position-fixed top-0 start-0 kloozLogo">
                 <a href="/index2.html">
@@ -35,13 +35,14 @@
                 </a>
             </div>
 
-<!-- Torentje image in bottom right-->
+            <!-- Torentje image in bottom right-->
 
             <div class="col-12 z-3">
-                <img src="/img/Placeholder/PLACEHOLDER_Toren-Transparent.png" class="position-fixed bottom-0 end-0 TorenImage">
+                <img src="/img/Placeholder/PLACEHOLDER_Toren-Transparent.png"
+                    class="position-fixed bottom-0 end-0 TorenImage">
             </div>
 
-<!-- Navigation element with white space column-->
+            <!-- Navigation element with white space column-->
 
             <div class="col-xl-6 col-lg-4 col-md-2"></div>
             <div class="col-xl-6 col-lg-8 col-md-10" id="navbar-position">
@@ -54,9 +55,9 @@
             </div>
         </div>
 
-<!-- Footer element-->
+        <!-- Footer element-->
 
-        <footer>
+        <footer class="footer mt-auto py-3">
             <div class="row">
                 <div class="col-10">
                     <nav>
@@ -65,24 +66,20 @@
                         <a target=”_blank” href="https://ec.europa.eu/european-social-fund-plus/nl"><img
                                 src="/img/FooterLogos/esflogo_large.jpg"
                                 alt="Link naar de website van het Europees Sociaal Fonds" class="footerlogo"></a>
-                        <!-- <a target=”_blank” href="https://www.facebook.com/biejke/?locale=nl_NL"><img
-                                src="/img/FooterLogos/Biejke.jpg"
-                                alt="Link naar de facebook pagina van Jeugdhuis tBiejke" class="footerlogo"></a> -->
                         <a target=”_blank” href="https://www.lidk.be/"><img
                                 src="/img/FooterLogos/lidk_logofull_color_1600x1240.webp"
                                 alt="Link naar de website van VZW Link in de Kabel" class="footerlogo"></a>
-                        <!-- <a target=”_blank” href="https://in-z.be/"><img
-                                src="/img/FooterLogos/10-2021_IN-Z_website_voorstel_V1-09.png"
-                                alt="Link naar de website van VZW Inzet" class="footerlogo"></a> -->
                     </nav>
                 </div>
                 <div class="col-2"></div>
             </div>
-            <p id="copyright">&copy; <script>document.write(new Date().getFullYear())</script> VZW Link in de Kabel </p>
+            <p id="copyright">&copy;
+                <script>document.write(new Date().getFullYear())</script> VZW Link in de Kabel
+            </p>
         </footer>
     </div>
 
-<!-- Cookies consent popup-->
+    <!-- Cookies consent popup-->
 
     <script type="text/javascript" src="https://cookieconsent.popupsmart.com/src/js/popper.js"></script>
     <script> window.start.init({ Palette: "palette1", Mode: "banner bottom", Theme: "classic", LinkText: "Meer informatie PLACEHOLDERLINK", Message: "Deze website gebruikt cookies om u de beste ervaring te geven.", ButtonText: "Akkoord!", Time: "5", })</script>
