@@ -148,6 +148,11 @@ margin-left: 10%;
 
 /* AGENDA */
 
+.linkClickable{
+    color: black;
+    text-decoration: none;
+}
+
 /* Responsiveness of agenda */
 
 .responsiveAgenda{
