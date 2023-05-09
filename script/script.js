@@ -1,4 +1,3 @@
- 
 window.addEventListener('load', function() {
     var buttons = document.querySelectorAll('button');
     var delay = 100; // milliseconds
@@ -13,7 +12,12 @@ window.addEventListener('load', function() {
             buttons[index].classList.remove('green-button');
           }, delay);
         }, delay * index);
+
+        buttons[index].addEventListener('click', function() {
+            var topElement = document.getElementById("top");
+            topElement.scrollIntoView({ behavior: "smooth" });
+        });
+
       })(i);
     }
-  });
-  
+});

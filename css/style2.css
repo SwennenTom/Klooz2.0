@@ -2,6 +2,10 @@
 /* ++++GENERAL++++*/
 @import url('https://fonts.googleapis.com/css2?family=Hind:wght@700&display=swap');
 
+html{
+    scroll-behavior: smooth;
+}
+
 
 /* ++++NAVIGATION++++ */
 
@@ -31,6 +35,7 @@
 .first-letter-black{
     color: black;
 }
+
 
 /* Position */
 #navbar-position{
