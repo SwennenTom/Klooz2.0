@@ -146,6 +146,12 @@ margin-left: 10%;
     z-index: 100;
 }
 
+/* CONTACT */
+
+.ContactLijst li{
+    list-style: none;
+}
+
 /* AGENDA */
 
 .linkClickable{
