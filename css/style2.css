@@ -157,6 +157,15 @@ margin-left: 10%;
     list-style: none;
 }
 
+.accordion-button{
+    background-color: none;
+    color: black;
+}
+
+.accordion-button address, .accordion-button p{
+    font-size: 16px;
+}
+
 /* AGENDA */
 
 .linkClickable{
