@@ -30,7 +30,7 @@
 /* Font size and color*/
 .nav a {
     font-family: 'ImpactFont', Impact, 'Hind', 'Arial Narrow Bold', sans-serif;
-    font-size: 5rem;
+    font-size: 3rem;
     color: black;
     text-decoration: none;
 }
@@ -48,7 +48,7 @@
 
 /* Position */
 #navbar-position{
-    margin-top: 120px;
+    margin-top: 240px;
 }
 
 /* Smaller font size for small devices */

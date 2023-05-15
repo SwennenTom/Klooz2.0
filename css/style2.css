@@ -24,7 +24,7 @@ html{
 }
 
 .active{
-    color:rgb(155,186,97);
+    color:rgb(155,186,97) !important;
 }
 
 /* Link turns green on hover*/
@@ -79,6 +79,11 @@ html{
 .card-body h5, .card a{
     color:black;
     text-decoration: none;
+    filter: grayscale();
+}
+
+.card-body h5:hover, .card a:hover{
+    filter: none;
 }
 
 /*card sizing and placement*/
