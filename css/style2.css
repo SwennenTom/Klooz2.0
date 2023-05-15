@@ -10,6 +10,7 @@
 
 html{
     scroll-behavior: smooth;
+    font-size: 16px;
 }
 
 
@@ -111,6 +112,9 @@ html{
     width: 140px;
 }
 
+.notextdecoration{
+    list-style: none;
+}
 
 /* EXPERIMENTEN */ 
 
@@ -163,7 +167,12 @@ margin-left: 10%;
 }
 
 .accordion-button address, .accordion-button p{
-    font-size: 16px;
+    font-size: 1rem !important;
+}
+
+.accordion-button small{
+    font-size: 0.7rem;
+    font-style: italic;
 }
 
 /* AGENDA */
