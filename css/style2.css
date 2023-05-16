@@ -188,6 +188,16 @@ margin-left: 10%;
     width: 100%;
 }
 
+
+
+#ContactAccordion h3{
+    font-size: 1.2rem;
+}
+
+#ContactAccordion h4{
+    font-size: 1rem;
+}
+
 /* AGENDA */
 
 .linkClickable{
