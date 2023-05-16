@@ -30,7 +30,7 @@ html{
 
 /* Link turns green on hover*/
 .nav a:hover, .accordion-button:hover{
-    /* color: rgba(1,78,25,255); */
+    
     color: rgb(155,186,97);
 }
 
@@ -114,6 +114,15 @@ html{
 
 .notextdecoration{
     list-style: none;
+}
+
+#link{
+    color: black;
+}
+
+#linkdeco{
+    color: black;
+    text-decoration: none;
 }
 
 /* EXPERIMENTEN */ 

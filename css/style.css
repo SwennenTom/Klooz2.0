@@ -51,6 +51,13 @@
     margin-top: 240px;
 }
 
+/*Turns link black and removes decoration */
+
+#linkdeco{
+    color: black;
+    text-decoration: none;
+}
+
 /* Smaller font size for small devices */
 @media (max-width: 650px) {
     .nav-link {
