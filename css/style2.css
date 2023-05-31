@@ -190,6 +190,7 @@ margin-left: 10%;
 
 .accordion-button address, .accordion-button p{
     font-size: 1rem !important;
+    font-family: 'Hind', 'Arial Narrow Bold', sans-serif !important;
 }
 
 .accordion-button small{
