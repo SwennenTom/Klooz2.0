@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Homepage van de website van Project Klooz - leerecosysteem met navigatie-elementen">
+    <meta name="description"
+        content="Homepage van de website van Project Klooz - leerecosysteem met navigatie-elementen">
 
     <title>Project Klooz</title>
 
@@ -20,6 +21,10 @@
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
     <script defer defer src="/script/script.js"></script>
+
+    <script defer type="text/javascript" src="config.js"></script>
+    <script defer type="text/javascript" src="https://cdn.kiprotect.com/klaro/v0.7.18/klaro.js"></script>
+
 </head>
 
 <body>
@@ -62,7 +67,8 @@
             <div class="row">
                 <div class="col-10">
                     <nav>
-                        <a target=”_blank” href="https://borgloon.be/"><img src="/img/FooterLogos/logo-borgloon (1).webp"
+                        <a target=”_blank” href="https://borgloon.be/"><img
+                                src="/img/FooterLogos/logo-borgloon (1).webp"
                                 alt="Link naar de website van de Stad Borgloon" class="footerlogo"></a>
                         <a target=”_blank” href="https://ec.europa.eu/european-social-fund-plus/nl"><img
                                 src="/img/FooterLogos/esflogo_large.webp"
@@ -80,15 +86,22 @@
                     var firstYear = 2023;
                     var displayYear = (currentYear > firstYear) ? `${firstYear} - ${currentYear}` : currentYear;
                     document.write(displayYear);
-                  </script> <a target="_blank" id="linkdeco" href="https://www.lidk.be/">VZW Link in de Kabel</a>
+                </script> <a target="_blank" id="linkdeco" href="https://www.lidk.be/">VZW Link in de Kabel</a> - <a
+                    href="/html/privacy.html" id="linkdeco">Privacy beleid</a>
             </p>
         </footer>
     </div>
 
     <!-- Cookies consent popup-->
 
-    <script type="text/javascript" src="https://cookieconsent.popupsmart.com/src/js/popper.js"></script>
-    <script> window.start.init({ Palette: "palette1", Mode: "banner bottom", Theme: "classic", LinkText: "Meer informatie", Message: "Deze website gebruikt cookies om u de beste ervaring te geven.", ButtonText: "Akkoord!", Time: "5", })</script>
+    <!-- <script type="text/javascript" src="https://cookieconsent.popupsmart.com/src/js/popper.js"></script>
+    <script> window.start.init({ Palette: "palette1", Mode: "banner bottom", Theme: "classic", LinkText: "Meer informatie", Message: "Deze website gebruikt cookies om u de beste ervaring te geven.",ButtonText: "Akkoord!", ButtonText: "Weigeren", Time: "5", })</script> -->
+
+    <!-- <div class="popup-container">
+        <span class="popup-message">Deze website maakt gebruik van cookies.</span>
+        <button class="popup-button popup-button-ok">Ok!</button>
+        <button class="popup-button popup-button-refuse">Weigeren</button>
+    </div> -->
 
 </body>
 

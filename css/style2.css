@@ -251,31 +251,32 @@ margin-left: 10%;
     width: auto;
 }
 
-@media (max-height: 850px) {
+@media (max-height: 800px) {
     .TorenImage{
-        height: 250px;
+        height: 350px;
         width: auto;
     }
 }
 
 /*Footer position*/
 #content{
-    padding-bottom: 140px;
+    padding-bottom: 340px;
 }
 
 footer{
-    position:fixed;
+    /* position:fixed; */
+    position:static;
     bottom:0;
-    width: 100vw;
+    /* width: 100vw; */
     background-color: white;
 }
 
-@media (max-height: 850px) {
+/* @media (max-height: 850px) {
     footer{
         position: static;
         top: 770px;
     }
-}
+} */
 
 /* Footer logo's */
 .footerlogo {
