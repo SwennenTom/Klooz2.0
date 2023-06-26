@@ -265,6 +265,18 @@ margin-bottom: 25%;
     list-style: none;
 }
 
+/*STAPPENPLAN*/
+
+.stappencard{
+    width: 300px !important;
+    height: 300px !important;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    float: left;
+}
+
+
 /*++++FOOTER++++*/
 
 /* Keeps image at bottom right*/
