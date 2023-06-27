@@ -268,8 +268,10 @@ margin-bottom: 25%;
 /*STAPPENPLAN*/
 
 .stappencard{
-    width: 300px !important;
+    width: 300px;
     height: 300px !important;
+    max-width: 300px;
+    max-height: 300px;
     margin: 10px;
     padding: 10px;
     box-sizing: border-box;
@@ -333,5 +335,4 @@ html, body {
     height: 100%;
     margin: 0;
   }
-  
   
