@@ -580,12 +580,70 @@
                 </script> <a target="_blank" id="linkdeco" href="https://www.lidk.be/">VZW Link in de Kabel</a> - <a href="/html/privacy.html" id="linkdeco">Privacy beleid</a>
             </p>
         </footer>
-
-
-        <!-- Cookies consent popup-->
-
-        <script type="text/javascript" src="https://cookieconsent.popupsmart.com/src/js/popper.js"></script>
-        <script> window.start.init({ Palette: "palette1", Mode: "banner bottom", Theme: "classic", LinkText: "Meer informatie", Message: "Deze website gebruikt cookies om u de beste ervaring te geven.", ButtonText: "Akkoord!", Time: "5", })</script>
+        <div class="cookie-consent-overlay">
+            <div id="cookieConsent" class="cookie-consent">
+                <p>
+                    Deze website gebruikt cookies om uw ervaring te verbeteren.
+                    <a href="/html/privacy.html" target="_blank">Privacy beleid</a>
+                </p>
+                <div class="buttons">
+                    <button id="acceptCookiesButton" class="cookie-consent-button">Ok!</button>
+                    <button id="refuseCookiesButton" class="cookie-consent-button">Liever niet</button>
+                </div>
+            </div>
+        </div>
+    
+        <script>
+            // Function to set the cookie for consent
+            function setCookie(name, value, days) {
+                var expires = "";
+                if (days) {
+                    var date = new Date();
+                    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                    expires = "; expires=" + date.toUTCString();
+                }
+                document.cookie = name + "=" + (value || "") + expires + "; path=/";
+            }
+    
+            // Function to hide the cookie consent popup
+            function hideCookieConsent() {
+        var cookieConsentPopup = document.getElementById("cookieConsent");
+        var cookieConsentOverlay = document.querySelector(".cookie-consent-overlay");
+    
+        cookieConsentPopup.style.display = "none";
+        cookieConsentOverlay.style.display = "none";
+    }
+    
+            // Function to handle the Accept button click
+            function handleAcceptClick() {
+                setCookie("cookieConsent", "accepted", 365); // Cookie will expire after 1 year
+                console.log("Accepted");
+                hideCookieConsent();
+            }
+    
+            // Function to handle the Refuse button click
+            function handleRefuseClick() {
+                setCookie("cookieConsent", "refused", 365); // Cookie will expire after 1 year
+                console.log("refused");
+                hideCookieConsent();
+            }
+    
+            // Check if the consent cookie exists
+            if (!document.cookie.includes("cookieConsent=")) {console.log("cookieConsentCheck performed");
+                document.addEventListener("DOMContentLoaded", function () {
+                    var acceptCookiesButton = document.getElementById("acceptCookiesButton");
+                    acceptCookiesButton.addEventListener("click", handleAcceptClick);
+    
+                    var refuseCookiesButton = document.getElementById("refuseCookiesButton");
+                    refuseCookiesButton.addEventListener("click", handleRefuseClick);
+    
+                    var cookieConsentPopup = document.getElementById("cookieConsent");
+                    cookieConsentPopup.style.display = "block";
+                });
+            } else{
+                hideCookieConsent();
+            }
+        </script>
     </div>
 </body>
 

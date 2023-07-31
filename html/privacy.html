@@ -21,8 +21,6 @@
         crossorigin="anonymous"></script>
     <script defer src="/script/script.js"></script>
 
-    <script defer type="text/javascript" src="config.js"></script>
-<script defer type="text/javascript" src="https://cdn.kiprotect.com/klaro/v0.7.18/klaro.js"></script>
 </head>
 
 <body>
@@ -69,7 +67,7 @@
             <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3"></div>
             <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-8" id="navbar-position">
 
-                <h1>Privacy beleid</h1>
+                <h1 id="top">Privacy beleid</h1>
 
     <a id="changeCookieSettingsLink" href="#">Wijzig cookie instellingen</a>
 
@@ -200,11 +198,87 @@
                     </p>
                 </footer>
 
+                <div class="cookie-consent-overlay">
+                    <div id="cookieConsent" class="cookie-consent">
+                        <p>
+                            Deze website gebruikt cookies om uw ervaring te verbeteren.
+                            <a href="/html/privacy.html" target="_blank">Privacy beleid</a>
+                        </p>
+                        <div class="buttons">
+                            <button id="acceptCookiesButton" class="cookie-consent-button">Ok!</button>
+                            <button id="refuseCookiesButton" class="cookie-consent-button">Liever niet</button>
+                        </div>
+                    </div>
+                </div>
+            
+                <script>
+                    // Function to set the cookie for consent
+                    function setCookie(name, value, days) {
+                        var expires = "";
+                        if (days) {
+                            var date = new Date();
+                            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                            expires = "; expires=" + date.toUTCString();
+                        }
+                        document.cookie = name + "=" + (value || "") + expires + "; path=/";
+                    }
+            
+                    // Function to hide the cookie consent popup
+                    function hideCookieConsent() {
+                var cookieConsentPopup = document.getElementById("cookieConsent");
+                var cookieConsentOverlay = document.querySelector(".cookie-consent-overlay");
+            
+                cookieConsentPopup.style.display = "none";
+                cookieConsentOverlay.style.display = "none";
+            }
 
-                <!-- Cookies consent popup-->
+            // Function to reset the cookie consent status
+function resetCookieConsent() {
+    setCookie("cookieConsent", "", -1); // Delete the consent cookie
+    var cookieConsentPopup = document.getElementById("cookieConsent");
+    var cookieConsentOverlay = document.querySelector(".cookie-consent-overlay");
 
-                <script type="text/javascript" src="https://cookieconsent.popupsmart.com/src/js/popper.js"></script>
-                <script> window.start.init({ Palette: "palette1", Mode: "banner bottom", Theme: "classic", LinkText: "Meer informatie", Message: "Deze website gebruikt cookies om u de beste ervaring te geven.", ButtonText: "Akkoord!", Time: "5", })</script>
+    cookieConsentPopup.style.display = "block"; // Display the popup again
+    cookieConsentOverlay.style.display = "block"; // Display the overlay again
+}
+            
+                    // Function to handle the Accept button click
+                    function handleAcceptClick() {
+                        setCookie("cookieConsent", "accepted", 365); // Cookie will expire after 1 year
+                        console.log("Accepted");
+                        hideCookieConsent();
+                    }
+            
+                    // Function to handle the Refuse button click
+                    function handleRefuseClick() {
+                        setCookie("cookieConsent", "refused", 365); // Cookie will expire after 1 year
+                        console.log("refused");
+                        hideCookieConsent();
+                    }
+            
+                    // Check if the consent cookie exists
+                    if (!document.cookie.includes("cookieConsent=")) {console.log("cookieConsentCheck performed");
+                        document.addEventListener("DOMContentLoaded", function () {
+                            var acceptCookiesButton = document.getElementById("acceptCookiesButton");
+                            acceptCookiesButton.addEventListener("click", handleAcceptClick);
+            
+                            var refuseCookiesButton = document.getElementById("refuseCookiesButton");
+                            refuseCookiesButton.addEventListener("click", handleRefuseClick);
+            
+                            var cookieConsentPopup = document.getElementById("cookieConsent");
+                            cookieConsentPopup.style.display = "block";
+                        });
+                    } else{
+                        hideCookieConsent();
+                    }
+
+                    // Add event listener for the "Wijzig cookie instellingen" link
+var changeCookieSettingsLink = document.getElementById("changeCookieSettingsLink");
+changeCookieSettingsLink.addEventListener("click", function (event) {
+    event.preventDefault(); // Prevent the link from navigating to a new page
+    resetCookieConsent(); // Reset the cookie consent status and display the popup again
+});
+                </script>
 
 </body>
 
