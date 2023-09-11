@@ -140,7 +140,7 @@ html{
 /* Set the size of the cards for the experiments */
 .experimentcard{
     width: 300px !important;
-    height: 300px !important;
+    height: 350px !important;
     margin: 10px;
     padding: 10px;
     box-sizing: border-box;
@@ -149,7 +149,9 @@ html{
 
 /* Sets the size of the images on the front of the cards*/
 .experimentsizer{
+    min-width: 275px !important;
     max-width: 275px !important;
+    min-height: 200px;
     max-height: 200px;
     object-fit:contain;
 }
