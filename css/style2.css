@@ -24,6 +24,11 @@ html{
     text-decoration: none;
 }
 
+h2, h3, h5{
+    font-family: 'ImpactFont', Impact, 'Hind', 'Arial Narrow Bold', sans-serif;
+}
+
+
 .active{
     color:rgb(155,186,97) !important;
 }
@@ -276,8 +281,8 @@ margin-bottom: 25%;
     max-height: 300px;
     margin: 10px;
     padding: 10px;
-    box-sizing: border-box;
-    float: left;
+    /* box-sizing: border-box;
+    float: left; */
 }
 
 
