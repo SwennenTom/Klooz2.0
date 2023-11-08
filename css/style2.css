@@ -301,6 +301,13 @@ margin-bottom: 25%;
     }
 }
 
+@media (max-width: 990px) {
+    .TorenImage {
+        height: 300px;
+      width: auto;
+    }
+  }
+
 /*Footer position*/
 #content{
     padding-bottom: 340px;
